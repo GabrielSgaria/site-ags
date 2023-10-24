@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --primary-collor: #177Be5;
+    --second-collor: rgb(240, 112, 103);
+    --terc-collor: #30b7ff;
+    --quar-collor: rgb(19, 20, 31);
+    --second-text: #82A0AA;
+}
+
+body {
+    background: white;
+}
+
+header {
+    color: white;
+    background: var(--primary-collor);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1140px;
+    /* Defina a largura máxima desejada */
+    margin-left: auto;
+    /* Centralize o conteúdo horizontalmente */
+    margin-right: auto;
+    padding: 0 15px;
+    /* Adicione margem interna para evitar que o conteúdo alcance as bordas da largura máxima */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 70px;
+}
+
+/* a:visited {
+color: inherit;
+} */
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 70px;
+    height: 1000px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.hero-bg {
+    background-image: linear-gradient(to right top, #5fc7ff, #a0d2ff, #cbdeff, #eaedff, #ffffff);
+    padding: 52px 0px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 50px;
+}
+
+.hero-text h2 {
+    font-size: 34px;
+    text-align: justify;
+}
+
+.hero-text p {
+    color: var(--second-text);
+    font-size: 18px;
+    text-align: justify;
+}
+
+.button-budget {
+    color: white;
+    background-color: var(--primary-collor);
+    border-radius: 6px;
+    width: fit-content;
+    padding: 12px 16px;
+    font-size: 18px;
+}
+.button-budget:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.img-hero {
+    max-width: 362px;
+    max-height: 300px;
+}
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

@@ -13,13 +13,13 @@
     <!--MENU-->
     <header>
         <nav class="container">
-            <div class="logo"><a href="/NOVO/">AGS ARCONDICIONADOS</a></div>
+            <div class="logo"><a href="/">AGS ARCONDICIONADOS</a></div>
 
             <ul class="nav-list">
-                <li> <a href="/NOVO/">Inicio</a></li>
-                <li> <a href="/NOVO/">Serviços</a></li>
-                <li> <a href="/NOVO/">Clientes</a></li>
-                <li> <a href="/NOVO/">Orçamento</a></li>
+                <li> <a href="/">Inicio</a></li>
+                <li> <a href="/">Serviços</a></li>
+                <li> <a href="/">Clientes</a></li>
+                <li> <a href="#form-orc">Orçamento</a></li>
             </ul>
         </nav>
         <!--Fim Menu-->
@@ -34,13 +34,48 @@
                         Prestando um serviço de excelência para os nossos clientes, atendimento residencial e
                         empresarial
                     </p>
-                    <a class="button-budget" href="/NOVO/"> Quero fazer um
-                        orçamento! </a>
+                    <a class="button-budget" href="/"> Quero fazer um
+                        orçamento ! </a>
                     </h2>
                 </div>
-                <img class="img-hero" src="/NOVO/assets/img/icone_pg_inicial.png">
+                <img class="img-hero" src="assets/img/icone_pg_inicial.png">
             </div>
         </section>
+
+        <!-- FORMULÁRIO DE ORÇAMENTO -->
+        <form class="container form-orçamento" id="form-orc">  <!-- NÃO USAR CARACTERES ESPECIAIS "Ç" -->
+            <div class="box-form-0">
+                <div class="box-form-1">
+                    <div class="input-wrapper">
+                        <label for="name">Nome do responsável:</label>
+                        <input type="text" class="name" name="name">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="razao-social">Razão Social:</label>
+                        <input type="text" class="razao-social" name="razao-social">
+                    </div>
+                </div>
+
+                <div class="box-form-2">
+                    <div class="input-wrapper">
+                        <label for="email">Email:</label>
+                        <input type="text" class="email" name="email">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" class="telefone" name="telefone">
+                    </div>
+                </div>
+            </div>
+            <div class="box-form-3">
+                <label for="mensagem">Mensagem:</label>
+                <textarea class="mensagem" name="mensagem" cols="30" rows="10"></textarea>
+
+                <button type="submit">Enviar</button>
+            </div>
+
+            
+        </form>
 
 
     </main>

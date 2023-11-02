@@ -19,7 +19,7 @@
 
     --shadow: -4px 4px 2.6px rgba(0, 0, 0, 0.15);
 
-    --swiper-theme-color: white !important;
+    --swiper-theme-color: #13141f56 !important;
 }
 
 body {
@@ -56,6 +56,7 @@ nav {
     width: 100%;
     margin: auto;
     height: 60px;
+    color: white;
 }
 
 a {
@@ -181,30 +182,29 @@ main {
     height: 100%;
     display: flex;
     margin: 25px 0px 25px 0px;
-
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 30px 44px;
 }
 
 
 .swiper-slide img {
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .swiper-img {
-    width: 340px;
-    height: 420px;
+    width: 280px; /*340*/
+    height: 360px; /*420*/
     box-shadow: rgba(0, 0, 0, 0.15) -4px 4px 2.6px;
     border-radius: 26px;
     border: 1px solid rgba(0, 0, 0, 0.15);
@@ -218,12 +218,15 @@ main {
 .wrapper-services {
     display: flex;
     flex-direction: column;
+    margin: 25px auto 25px auto;
+    
 }
 
 .cards-wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    margin: 25px 0px 25px 0px;
 
 }
 
@@ -260,14 +263,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;  
-    margin: 25px 0px 25px 0px;
 }
 
 .slide-list {
     display: flex;
-    gap: 76px;
+    gap: 42px;
+    margin: 25px 0px 25px 0px;
 }
 .slide-item {
     border: 1px solid #fff;
@@ -277,15 +279,25 @@ main {
 .slide-content img {
     width: 100px;
     height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(9);
 }
 
 /* FIM CLIENTES */
 
 /* FORM */
 
-.form-wrapper {
+.ewrapper {
     width: 100%;
 
+}
+.btn-disabled {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
 }
 
 .form-error {
@@ -321,6 +333,7 @@ main {
     margin-top: 10px;
     gap: 26px;
     width: 100%;
+    margin: 25px 0 25px 0;
 }
 
 .box-form-0 label {
@@ -335,6 +348,8 @@ main {
     gap: 26px;
 
     font-size: 16px;
+
+    
 }
 
 .box-form-2 {
@@ -367,6 +382,9 @@ main {
     align-items: center;
     gap: 10px;
     width: 100%;
+    margin: 4px 0 25px 0; 
+    /* margin 4px, pois o gap do form-orcamento é 26 e 
+    para ficar todos os espaçamentos iguais diminuimos o valor */
 }
 
 .form-orcamento input {

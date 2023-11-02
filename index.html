@@ -16,10 +16,10 @@
             <div class="logo"><a href="/">AGS ARCONDICIONADOS</a></div>
 
             <ul class="nav-list">
-                <li> <a href="/">Inicio</a></li>
-                <li> <a href="/">Serviços</a></li>
-                <li> <a href="/">Clientes</a></li>
-                <li> <a href="/">Orçamento</a></li>
+                <li> <a href="index.html">Inicio</a></li>
+                <li> <a href="#portifolio">Portifólio</a></li>
+                <li> <a href="#ref-servic">Serviços</a></li>
+                <li> <a href="#orcamento">Orçamento</a></li>
             </ul>
         </nav>
         <!--Fim Menu-->
@@ -37,11 +37,11 @@
                         garantir que seu ambiente seja sempre
                         agradável e saudável, seja ele residencial ou comercial.
                     </p>
-                    <a class="button-budget" href="/"> Quero fazer um
+                    <a class="button-budget" id="portifolio" href="/"> Quero fazer um
                         orçamento ! </a>
                     </h2>
                 </div>
-                <img class="img-hero" src="assets/img/icone_pg_inicial.png">
+                <img class="img-hero"  src="assets/img/icone_pg_inicial.png">
             </div>
         </section>
 
@@ -57,8 +57,8 @@
                 </h2>
             </div>
             <!-- Slider main container -->
+            
             <div class="swiper mySwiper">
-
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
@@ -92,13 +92,13 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="swiper-img">
+                        <div class="swiper-img" >
                             <img src="/assets/img/instalado3.jpg">
                         </div>
                     </div>
                 </div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination" id="ref-servic"></div>
 
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -391,37 +391,47 @@
         </div>
         <!-- fim serviços -->
 
-        <div class="container">
+        <div class="container" id="clientes">
             <div class="slider-wrapper-clients">
                 <div class="slide-list">
                     <div class="slide-item">
                         <div class="slide-content">
-                            <img src="./assets/img/png/HUEM_horizontal_vermelho.svg" alt="BRF Carambei e BRF Videira SC" />
+                            <img src="./assets/img/png/brf.svg" alt="BRF Carambei e BRF Videira SC" />
                         </div>
                     </div>
                     <div class="slide-item">
                         <div class="slide-content">
-                            <img src="./assets/img/png/hospital-mackenzie.png" alt="Hospital Evangelista Mackenzie" />
+                            <img src="./assets/img/png/hospital-mackenzie.svg" alt="Hospital Evangelista Mackenzie" />
                         </div>
                     </div>
                     <div class="slide-item">
                         <div class="slide-content">
-                            <img src="./assets/img/png/laborclin.png" alt="LB Laborclin" />
+                            <img src="./assets/img/png/laborclin.svg" alt="LB Laborclin" />
                         </div>
                     </div>
                     <div class="slide-item">
                         <div class="slide-content">
-                            <img src="./assets/img/png/lojas-americanas.png" alt="Lojas Americanas" />
+                            <img src="./assets/img/png/lojas-americanas.svg" alt="Lojas Americanas" />
                         </div>
                     </div>
                     <div class="slide-item">
                         <div class="slide-content">
-                            <img src="./assets/img/png/renault.png" alt="Renault" />
+                            <img src="./assets/img/png/renault.svg" alt="Renault" />
                         </div>
                     </div>
                     <div class="slide-item">
                         <div class="slide-content">
-                            <img src="./assets/img/png/volkswagen.png" alt="Volkswagen" />
+                            <img src="./assets/img/png/volkswagen.svg" alt="Volkswagen" />
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-content">
+                            <img src="./assets/img/png/vita.svg" alt="Hospital Vita" />
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-content">
+                            <img src="./assets/img/png/logo_PLACE_site.svg" alt="Place Eventos" />
                         </div>
                     </div>
                 </div>
@@ -429,15 +439,9 @@
         </div>
 
 
-
-
-
-
-
-
         <!-- FORMULÁRIO DE ORÇAMENTO -->
         <form class="container form-orcamento" id="form-orc">
-            <div class="box-form-0">
+            <div class="box-form-0" id="orcamento">
                 <div class="box-form-1">
                     <div class="input-wrapper">
                         <label for="name">Nome do responsável:</label>
@@ -470,7 +474,7 @@
             </div>
             <div class="box-form-4">
                 <p class="my-form-status"></p>
-                <button type="submit">Enviar</button>
+                <button type="submit" id="btn-enviar">Enviar</button>
             </div>
         </form>
         <!-- FIM FORMULÁRIO -->

@@ -577,42 +577,10 @@ i {
         flex-direction: column;
     }
 
-    .text-cards h2,
-    .text-cards h3 {
-        font-size: 18px;
+    .img-hero{
+        max-height: 300px;
     }
-
-    .hero-text h2 {
-        font-size: 24px;
     }
-
-    .hero-text p {
-        font-size: 14px;
-    }
-
-    .button-budget {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    .swiper-img {
-        width: 200px;
-        height: 260px;
-    }
-
-    .form-orcamento input,
-    textarea {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    .box-form-4 button {
-        font-size: 12px;
-        padding: 8px 12px;
-    }
-}
-
-@media screen and (max-width: 481px) {
     .text-cards h2,
     .text-cards h3 {
         font-size: 16px;
@@ -623,11 +591,94 @@ i {
     }
 
     .hero-text p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .button-budget {
-        font-size: 12px;
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .swiper-img {
+        width: 200px;
+        height: 260px;
+    }
+    .text-portifolio h3 {
+        font-size: 20px;
+    }
+    .text-portifolio h2 {
+        font-size: 14px;
+    }
+    .text-cards h3 {
+        font-size: 20px;
+    }
+    .text-cards h2 {
+        font-size: 14px;
+    }
+    .form-orcamento input,
+    textarea {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .box-form-4 button {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .slide-list {
+        gap: 20px
+    }
+    .slide-item {
+        height: 46px;
+    }
+
+    .box-form-1 {
+        font-size: 14px;
+    }
+    .box-form-2 {
+        font-size: 14px;
+    }
+    .box-form-3 {
+        font-size: 14px;
+    }
+    .box-form-4 button {
+        font-size: 14px;
+    }
+
+    .text-footer-left a {
+        font-size: 10px;
+    }
+
+    .text-footer-right a {
+        font-size: 10px;
+    }
+
+    .logo a {
+        font-size: 14px;
+    }
+    .nav-list a {
+        font-size: 14px;
+    }
+    .card {
+        max-width: 99px;
+    }
+@media screen and (max-width: 481px) {
+    .text-cards h2,
+    .text-cards h3 {
+        font-size: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 16px;
+    }
+
+    .hero-text p {
+        font-size: 10px;
+    }
+
+    .button-budget {
+        font-size: 8px;
         padding: 6px 10px;
     }
 
@@ -638,12 +689,90 @@ i {
 
     .form-orcamento input,
     textarea {
-        font-size: 10px;
+        font-size: 6px;
         padding: 4px;
     }
 
     .box-form-4 button {
-        font-size: 10px;
+        font-size: 6px;
         padding: 6px 10px;
+    }
+    nav {
+        height: 46px;
+    }
+    .img-hero {
+        max-height: 199px;
+    }
+    .hero-bg {
+        padding: 26px 0;
+    }
+    .text-portifolio {
+        margin: 14px 0 14px 0;
+        gap: 12px;
+    }
+    .text-portifolio h3 {
+        font-size: 16px;
+    }
+    .text-portifolio h2 {
+        font-size: 12px;
+    }
+    .text-cards h3 {
+        font-size: 16px;
+    }
+    .text-cards h2 {
+        font-size: 12px;
+    }
+    .swiper {
+        margin: 14px 0 14px 0;
+    }
+    .swiper-slide {
+        padding: 30px 0px;
+    }
+    .swiper-img {
+        height: 166px;
+    }
+    .wrapper-services {
+        margin: 14px 0 14px 0;
+    }
+    .text-cards {
+        margin: 14px 0 14px 0;
+        gap: 12px;
+    }
+    .cards-wrapper {
+        margin: 14px 0 14px 0;
+    }
+    .card {
+        max-width: 80px;
+        font-size: 12px;
+    }
+    .slide-list {
+        margin: 14px 0 14px 0;
+    }
+    .slide-item {
+        height: 36px;
+    }
+    .form-orcamento {
+        margin: 14px 0 14px 0;
+    }
+    .box-form-0 {
+        margin: 14px 0 14px 0;
+    }
+    .box-form-1 {
+        margin: 14px 0 14px 0;
+    }
+    .box-form-2 {
+        margin: 14px 0 14px 0;
+    }
+    .box-form-3 {
+        margin: 14px 0 14px 0;
+    }
+    .box-form-4 {
+        margin: 14px 0 14px 0;
+    } 
+    .box-form-4 button {
+        font-size: 16px;
+    }
+    .form-orcamento {
+        gap: 0;
     }
 }

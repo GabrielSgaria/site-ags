@@ -1,5 +1,14 @@
+let width = window && window.screen.width;
+let perview = 3;
+
+if (width <= 481) {
+  perview = 1;
+}else {
+  perview = 3;
+}
+
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: perview,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",

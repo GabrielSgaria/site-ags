@@ -580,7 +580,7 @@ i {
     .img-hero{
         max-height: 300px;
     }
-    }
+    
     .text-cards h2,
     .text-cards h3 {
         font-size: 16px;
@@ -625,10 +625,6 @@ i {
         font-size: 10px;
         padding: 8px 12px;
     }
-
-    .slide-list {
-        gap: 20px
-    }
     .slide-item {
         height: 46px;
     }
@@ -661,25 +657,42 @@ i {
         font-size: 14px;
     }
     .card {
-        max-width: 99px;
+        max-width: 99px;       
     }
+}
 @media screen and (max-width: 481px) {
-    .text-cards h2,
-    .text-cards h3 {
-        font-size: 10px;
+
+    .slider-wrapper-clients {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        gap: 16px;
+        align-items: start;
+
     }
 
     .hero-text h2 {
-        font-size: 16px;
+        font-size: 30px;
+        text-align: center;
     }
 
     .hero-text p {
-        font-size: 10px;
+        font-size: 16px;
+        text-align: start;
+    }
+
+    .img-hero {
+        max-height: 300px;
     }
 
     .button-budget {
-        font-size: 8px;
-        padding: 6px 10px;
+        font-size: 14px;
+        padding: 10px 18px;
     }
 
     .swiper-img {
@@ -689,7 +702,7 @@ i {
 
     .form-orcamento input,
     textarea {
-        font-size: 6px;
+        font-size: 12px;
         padding: 4px;
     }
 
@@ -700,21 +713,20 @@ i {
     nav {
         height: 46px;
     }
-    .img-hero {
-        max-height: 199px;
-    }
     .hero-bg {
-        padding: 26px 0;
+        padding: 20px 0;
+        margin: 0px 0px 20px 0px;
     }
     .text-portifolio {
         margin: 14px 0 14px 0;
         gap: 12px;
     }
     .text-portifolio h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .text-portifolio h2 {
-        font-size: 12px;
+        font-size: 16px;
+        text-align: start;
     }
     .text-cards h3 {
         font-size: 16px;
@@ -729,7 +741,8 @@ i {
         padding: 30px 0px;
     }
     .swiper-img {
-        height: 166px;
+        height: 360px;
+        width: 330px;
     }
     .wrapper-services {
         margin: 14px 0 14px 0;
@@ -738,15 +751,25 @@ i {
         margin: 14px 0 14px 0;
         gap: 12px;
     }
+    .text-cards h3 {
+        font-size: 20px;
+    }
+    .text-cards h2 {
+        font-size: 16px;
+    }
+
     .cards-wrapper {
         margin: 14px 0 14px 0;
+        gap: 20px;
     }
     .card {
-        max-width: 80px;
-        font-size: 12px;
+        max-width: 100px;
+        font-size: 14px;
+        gap: 10px;
     }
     .slide-list {
         margin: 14px 0 14px 0;
+        gap: 10px;
     }
     .slide-item {
         height: 36px;
@@ -757,6 +780,9 @@ i {
     .box-form-0 {
         margin: 14px 0 14px 0;
     }
+    .box-form-0 label {
+        font-size: 14px;
+    }
     .box-form-1 {
         margin: 14px 0 14px 0;
     }
@@ -764,13 +790,14 @@ i {
         margin: 14px 0 14px 0;
     }
     .box-form-3 {
+        font-size: 14px;
         margin: 14px 0 14px 0;
     }
     .box-form-4 {
         margin: 14px 0 14px 0;
     } 
     .box-form-4 button {
-        font-size: 16px;
+        font-size: 14px;
     }
     .form-orcamento {
         gap: 0;

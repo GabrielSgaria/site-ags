@@ -678,7 +678,7 @@ i {
 
     .hero-text h2 {
         font-size: 30px;
-        text-align: center;
+        text-align: start;
     }
 
     .hero-text p {
@@ -726,7 +726,7 @@ i {
     }
     .text-portifolio h2 {
         font-size: 16px;
-        text-align: start;
+        text-align: center;
     }
     .text-cards h3 {
         font-size: 16px;

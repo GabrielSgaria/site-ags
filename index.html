@@ -18,7 +18,7 @@
 
                 <ul class="nav-list">
                     <li> <a href="index.html">Inicio</a></li>
-                    <li> <a href="#portifolio">Portifólio</a></li>
+                    <li> <a href="#portfolio">Portfólio</a></li>
                     <li> <a href="#ref-servic">Serviços</a></li>
                     <li> <a href="#orcamento">Orçamento</a></li>
                 </ul>
@@ -38,7 +38,7 @@
                             garantir que seu ambiente seja sempre
                             agradável e saudável, seja ele residencial ou comercial.
                         </p>
-                        <a class="button-budget" id="portifolio" href="#orcamento"> FAZER O MEU ORÇAMENTO! </a>
+                        <a class="button-budget" href="#orcamento"> FAZER O MEU ORÇAMENTO! </a>
                         </h2>
                     </div>
                     <img class="img-hero" src="assets/img/img-pg-inicial.svg">
@@ -47,12 +47,12 @@
 
 
 
-            <div class="container" id="clientes">
+            <div class="container" id="clientes" >
                 <div class="slider-wrapper-clients">
                     <div class="slide-list">
                         <div class="slide-item">
                             <div class="slide-content">
-                                <img src="./assets/img/png/brf.svg" alt="BRF Carambei e BRF Videira SC" />
+                                <img src="./assets/img/png/brf.svg" alt="BRF Carambeí e BRF Videira SC" />
                             </div>
                         </div>
                         <div class="slide-item">
@@ -94,12 +94,12 @@
                     </div>
                 </div>
             </div>
-
-            <!-- CARD DE IMÁGENS -->
+            <div id="portfolio"></div>
+            <!-- CARD DE IMAGENS -->
             <div class="container">
                 <div class="text-portifolio">
                     <h3>
-                        PORTIFÓLIO
+                        PORTFÓLIO
                     </h3>
                     <h2>
                         Navegue por nossa galeria e descubra como transformamos desafios em soluções, Cada projeto
@@ -437,54 +437,81 @@
                             </div>
 
                             <span>Instalação e limpeza de filtros</span>
+                            <div id="orcamento"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- fim serviços -->
-
-            
-
-
-            <!-- FORMULÁRIO DE ORÇAMENTO -->
-            <form class="container form-orcamento" id="form-orc">
-                <div class="box-form-0" id="orcamento">
-                    <div class="box-form-1">
-                        <div class="input-wrapper">
-                            <label for="name">Nome do responsável:</label>
-                            <input type="text" class="name" name="name">
-                            <span class="form-message-error" id="obg-name"></span>
+            <div class="container wrapper-orc"> <!-- COBRE TODO ENTRE EM CONTATO E FORM-->
+                <div class="contact">
+                    <div class="wrapper-contact">
+                        <div class="contact-text">
+                            <h2>Entre em contato!</h2>
+                            <p>Preencha o formulário para solicitar um orçamento.</p>
                         </div>
-                        <div class="input-wrapper">
-                            <label for="razao-social">Razão Social:</label>
-                            <input type="text" class="razao-social" name="razao-social">
+                        <div class="wrapper-elements">
+                            <div class="elements">
+                                <i class="ph ph-envelope-simple"></i>
+                                <p><a href="mailto:ags.dutos@gmail.com" target="_blank">ags.dutos@gmail.com</a></p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="box-form-2">
-                        <div class="input-wrapper">
-                            <label for="email">E-mail:</label>
-                            <input type="text" class="email" name="email">
-                            <span class="form-message-error" id="obg-email"></span>
+                        <div class="wrapper-elements">
+                            <div class="elements">
+                                <i class="ph ph-whatsapp-logo"></i>
+                                <p><a href="https://wa.me/5541992347837" target="_blank">(041) 99234-7837</a></p>
+                            </div>
                         </div>
-                        <div class="input-wrapper">
-                            <label for="telefone">Telefone:</label>
-                            <input type="text" class="telefone" name="telefone">
-                            <span class="form-message-error" id="obg-telefone"></span>
+                        <div class="wrapper-elements">
+                            <div class="elements">
+                                <i class="ph ph-map-pin"></i>
+                                <p><a href="https://maps.app.goo.gl/YgTKAxFo44o329ay8" target="_blank">Rua Rui Barbosa n. 642, Vargem Grande,
+                                    Pinhais-PR</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="box-form-3">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea class="mensagem" name="mensagem" cols="30" rows="10"></textarea>
-                    <span class="form-message-error" id="obg-mensagem"></span>
-                </div>
-                <div class="box-form-4">
-                    <p class="my-form-status"></p>
-                    <button type="submit" id="btn-enviar">Enviar</button>
-                </div>
-            </form>
-            <!-- FIM FORMULÁRIO -->
+
+                <!-- FORMULÁRIO DE ORÇAMENTO -->
+                <form class="container form-orcamento" id="form-orc">
+                    <div class="box-form-0">
+                        <div class="box-form-1">
+                            <div class="input-wrapper">
+                                <label for="name">Nome do responsável:</label>
+                                <input type="text" class="name" name="name">
+                                <span class="form-message-error" id="obg-name"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="razao-social">Razão Social:</label>
+                                <input type="text" class="razao-social" name="razao-social">
+                            </div>
+                        </div>
+
+                        <div class="box-form-2">
+                            <div class="input-wrapper">
+                                <label for="email">E-mail:</label>
+                                <input type="text" class="email" name="email">
+                                <span class="form-message-error" id="obg-email"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="telefone">Telefone:</label>
+                                <input type="text" class="telefone" name="telefone">
+                                <span class="form-message-error" id="obg-telefone"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-form-3">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="mensagem" name="mensagem" cols="30" rows="10"></textarea>
+                        <span class="form-message-error" id="obg-mensagem"></span>
+                    </div>
+                    <div class="box-form-4">
+                        <p class="my-form-status"></p>
+                        <button type="submit" id="btn-enviar">Enviar</button>
+                    </div>
+                </form>
+                <!-- FIM FORMULÁRIO -->
+            </div>
         </main>
 
         <!-- FOOTER -->
@@ -493,13 +520,13 @@
                 <ul class="text-footer-left">
                     <li><a href="/"><i class="ph ph-wind"></i> A.G.S. AR CONDICIONADOS</a></li>
                     <li></li><a href="/"> <i class="ph ph-clock"></i> Seg a Sex das 8:00 as 17:30 </a></li>
-                    <li></li><a href="/"> <i class="ph ph-map-pin"></i> Rua Rui Barbosa n. 642, Vargem Grande,
+                    <li></li><a href="https://maps.app.goo.gl/YgTKAxFo44o329ay8" target="_blank"> <i class="ph ph-map-pin"></i> Rua Rui Barbosa n. 642, Vargem Grande,
                         Pinhais-PR.</a></li>
                 </ul>
                 <ul class="text-footer-right">
-                    <li><a href="/"><i class="ph ph-whatsapp-logo"></i> (041) 9 9234-7837</a></li>
-                    <li></li><a href="/"> <i class="ph ph-envelope-simple"></i> ags.dutos@gmail.com</a></li>
-                    <li></li><a href="/"><i class="ph ph-instagram-logo"></i> @agsarcondicionados</a></li>
+                    <li><a href="https://wa.me/5541992347837" target="_blank"><i class="ph ph-whatsapp-logo"></i> (041) 9 9234-7837</a></li>
+                    <li></li><a href="mailto:ags.dutos@gmail.com"> <i class="ph ph-envelope-simple"></i> ags.dutos@gmail.com</a></li>
+                    <li></li><a href="https://www.instagram.com/a.g.sarcondicionado/"><i class="ph ph-instagram-logo"></i> @agsarcondicionados</a></li>
                 </ul>
             </div>
         </footer>

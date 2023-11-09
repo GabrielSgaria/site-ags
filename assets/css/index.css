@@ -739,7 +739,7 @@ i {
 @media screen and (max-width: 481px) {
 
     .slider-wrapper-clients {
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 26px 0px;
     }
 
     .hero {
@@ -821,7 +821,7 @@ i {
         width: 330px;
     }
     .wrapper-services {
-        margin: 14px 0 14px 0;
+        margin: 26px 0 26px 0;
     }
     .text-cards {
         margin: 14px 0 14px 0;
@@ -882,6 +882,7 @@ i {
     /* contatos */
     .wrapper-orc {
         flex-direction: column;
+        margin-top: 20px;
     }
     .wrapper-contact {
         padding: 26px;

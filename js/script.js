@@ -51,19 +51,19 @@ function enviarForm(e) {
   obgMensagem.innerHTML = "";
 
   if (name === "") {
-    obgName.innerHTML = "Campo obrigatorio! ";
+    obgName.innerHTML = "Campo obrigatório! ";
     erro = true;
   }
   if (email === "") {
-    obgEmail.innerHTML = "Campo obrigatorio!";
+    obgEmail.innerHTML = "Campo obrigatório!";
     erro = true;
   }
   if (telefone === "") {
-    obgTelefone.innerHTML = "Campo obrigatorio!";
+    obgTelefone.innerHTML = "Campo obrigatório!";
     erro = true;
   }
   if (mensagem === "") {
-    obgMensagem.innerHTML = "Campo obrigatorio!";
+    obgMensagem.innerHTML = "Campo obrigatório!";
     erro = true;
   }
   if (erro) {

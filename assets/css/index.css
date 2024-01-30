@@ -37,7 +37,6 @@ body {
 .wrapper-site {
     display: flex;
     flex-direction: column;
-
 }
 
 header {
@@ -85,6 +84,21 @@ main {
 }
 
 /* HERO */
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo img{
+    width: 6%;
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+}
 .nav-list {
     display: flex;
     align-items: center;
@@ -650,16 +664,18 @@ i {
     }
 }
 
-/* PAREI AQUI */
+
 @media screen and (max-width: 767px) {
     nav {
         margin: 10px 0 10px 0;
         display: flex;
         flex-direction: column;
     }
-
+    .hero {
+        gap: 26px;
+    }
     .img-hero{
-        max-height: 300px;
+        max-width: 339px;
     }
     
     .text-cards h2,
@@ -731,9 +747,13 @@ i {
         font-size: 10px;
     }
 
-    .logo a {
-        font-size: 14px;
+    .logo {
+        justify-content: center;
     }
+    .logo img{
+        width: 8%;
+    }
+ 
     .nav-list a {
         font-size: 14px;
     }
